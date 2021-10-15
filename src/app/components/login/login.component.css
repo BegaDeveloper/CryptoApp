@@ -1,0 +1,63 @@
+body {
+  font-family: "Varela Round", sans-serif;
+}
+
+.main-div {
+  overflow-x: hidden;
+}
+
+.img-div img {
+  height: 100vh;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  -moz-box-shadow: 0 0 4px #ccc;
+  -webkit-box-shadow: 0 0 4px #ccc;
+  box-shadow: 0 0 4px #ccc;
+}
+.form-div {
+  color: rgb(241, 241, 241);
+  text-shadow: 1px 1px rgba(50, 50, 70, 0.5);
+  width: 550px;
+  height: auto;
+  padding: 30px 30px 40px 30px;
+  border-radius: 30px;
+  margin-top: 150px;
+  background-image: url(../../../assets/images/form1.jpg);
+
+  background-repeat: no-repeat;
+  display: block;
+  background-size: cover;
+  position: relative;
+  -moz-box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #ccc;
+}
+input {
+  width: 300px;
+  border-radius: 50px;
+}
+
+.center-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 850px) {
+  .col-md-4 {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .form-div {
+    width: 300px;
+    padding: 20px 20px 30px 20px;
+  }
+  input {
+    width: 200px;
+    border-radius: 30px;
+  }
+}

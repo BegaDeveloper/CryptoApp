@@ -1,0 +1,41 @@
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+#bg-nav {
+  background-color: #e6e6e6;
+  -moz-box-shadow: 0 0 4px #ccc;
+  -webkit-box-shadow: 0 0 4px #ccc;
+  box-shadow: 0 0 4px #ccc;
+}
+#link {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  transition: color 0.5s;
+}
+
+#link:hover {
+  color: rgb(221, 47, 56);
+}
+
+#nav-head {
+  margin-left: 100px;
+  font-weight: 700;
+  text-shadow: 1px 1px rgba(50, 50, 70, 0.5);
+  font-size: 26px;
+}
+
+ul {
+  margin: 0 auto;
+}
+
+li {
+  margin-left: 10px;
+}
+
+@media (max-width: 380px) {
+  #nav-head {
+    margin-left: 0;
+  }
+}

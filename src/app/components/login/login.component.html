@@ -1,0 +1,52 @@
+<div class="main-div">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="img-div">
+        <img src="../../../assets/images/city.jpg" alt="crypto-login" />
+      </div>
+    </div>
+    <div class="col-md-8">
+      <h1
+        class="text-center mt-5"
+        style="font-family: 'Varela Round', sans-serif"
+      >
+        Crypto Market
+      </h1>
+      <div class="center-div">
+        <div class="form-div">
+          <div class="text">
+            <h3>Welcome,</h3>
+            <h4>Please log in to see the content</h4>
+          </div>
+          <div class="container">
+            <hr class="hr-tag mt-5" />
+          </div>
+          <form class="mt-5" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <label for="user"
+              >Username <i class="fas fa-long-arrow-alt-right"></i> (User)
+            </label>
+            <input
+              type="text"
+              name="user"
+              class="form-control"
+              id="user"
+              formControlName="user"
+            />
+            <label for="password"
+              >Password
+              <i class="fas fa-long-arrow-alt-right"></i> (password)</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              name="password"
+              formControlName="password"
+            />
+            <button type="submit" class="btn btn-info mt-3">Log in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

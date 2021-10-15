@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="main-div">
+    <table class="table table-striped table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th>Symbol</th>
+          <th>Title</th>
+          <th>Price in USD</th>
+          <th>Price in BTC</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let coin of getCoins">
+          <th scope="row">{{ coin.symbol }}</th>
+          <th>{{ coin.name }}</th>
+          <th>{{ coin.metrics.market_data.price_usd }}</th>
+          <th>{{ coin.metrics.market_data.price_btc }}</th>
+        </tr>
+      </tbody>
+    </table>
+    <div *ngIf="getLoading">
+      <p class="loading">Loading...</p>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="footer-text">
+    <p class="text-center">&copy; Crypto Market 2021/2022</p>
+  </div>
+</footer>
